@@ -8,7 +8,7 @@ import { LinkContextType } from '../../../types/LinkContext';
 const Header = () => {
     const [scrollClass, setScrollClass] = useState <string>(""); //state на скролл
     
-    //скрипт для скролла, когда скроллится до определённых px появляется background
+    //скрипт для скролла, когда скроллится до определённых px появляется background.
     window.addEventListener('scroll', () => {
         const scroll: number = window.scrollY;
         if(scroll >= 100){
