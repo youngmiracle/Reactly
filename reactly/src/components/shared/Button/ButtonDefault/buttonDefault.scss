@@ -1,0 +1,34 @@
+.buttonDefault{
+    background-color: #910DC4;
+    font-size: 2vh;
+    border-radius: 50px;
+    height: 50%;
+    width: 100%;
+    color: #dbcbc3;
+    padding: 15px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    animation: buttonDefaultHoverBack 0.5s alternate forwards;    
+}
+.buttonDefaultTrue{
+    background-color: transparent;
+    border: 1px solid #910DC4;
+    color: #910DC4;
+    animation: buttonDefaultHoverBack 0.5s alternate forwards;    
+}
+.buttonDefault:hover{
+    animation: buttonDefaultHover 0.7s alternate forwards;    
+}
+@keyframes buttonDefaultHover{
+    100%{
+        box-shadow: 1px 1px 15px 1px white;
+    }
+}
+@keyframes buttonDefaultHoverBack{
+    from{
+        box-shadow: 1px 1px 15px 1px white;
+    }
+    100%{
+        box-shadow: 1px 1px 3px 1px#900dc48d;;
+    }
+}

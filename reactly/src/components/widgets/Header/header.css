@@ -1,0 +1,82 @@
+header {
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  padding: 2vh 15%;
+  height: 9vh;
+  overflow: hidden;
+  -webkit-box-shadow: 0.5px 0.5px 10px 0.5px white;
+          box-shadow: 0.5px 0.5px 10px 0.5px white;
+}
+header .header__nav {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header__nav .header__logo {
+  width: 10%;
+  height: 130%;
+}
+header .header__nav .header__link {
+  letter-spacing: 1px;
+  font-size: 2vh;
+  color: #dbcbc3;
+  font-weight: 300;
+}
+header .header__nav .header__link:hover {
+  font-weight: 400;
+}
+header .header__nav .header__linkActive {
+  border-bottom: 1px solid hsla(283, 88%, 41%, 0.6);
+  font-weight: 400;
+}
+
+.headerScroll {
+  -webkit-animation: scrollHeader 0.7s alternate forwards;
+          animation: scrollHeader 0.7s alternate forwards;
+}
+
+.headerScrollBack {
+  -webkit-animation: scrollHeaderBack 1s alternate forwards;
+          animation: scrollHeaderBack 1s alternate forwards;
+}
+
+@-webkit-keyframes scrollHeader {
+  100% {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+@keyframes scrollHeader {
+  100% {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+@-webkit-keyframes scrollHeaderBack {
+  from {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes scrollHeaderBack {
+  from {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
