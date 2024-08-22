@@ -11,6 +11,6 @@ app.use(cors());
 app.use(express.json());
 
 
-app.use('/da', require('./routes/OilRoute'));
+app.use('/api', require('./routes/OilRoute'));
 
 app.listen(5000);
