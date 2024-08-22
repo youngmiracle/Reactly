@@ -22,6 +22,7 @@ const Header = () => {
     const nameLinki = useLinkContext(); //Получаем глобальное состояние, в котором хранится класс для кнопки
     const { setNameLink }: any = useLinkContext()
     
+    
     //Функция, которая принимает название страницы, обновляет ключ в ssesionStorage и меняет глобальное состояние
     const onClickClassChangeLink = function (nameLink: LinkContextType){
         sessionStorage.setItem("linkActiveClass", nameLink);
