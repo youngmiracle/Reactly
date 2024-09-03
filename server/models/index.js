@@ -1,6 +1,5 @@
 const Sequelize = require('sequelize');
 const dotenv = require('dotenv');
-const motorOil = require('./motorOil');
 
 dotenv.config('../.env');
 
@@ -10,9 +9,16 @@ const sequelize = new Sequelize(process.env.DATABASE_NAME, process.env.DATABASE_
     logging: false
 });
 
-const MO = require('./motorOil')(sequelize);
+const motorOil = require('./motorOil')(sequelize);
+const gearOil = require('./gearOil')(sequelize);
+const antiFreeze = require('./antiFreeze')(sequelize);
+const user = require('./user')(sequelize);
+
 
 module.exports ={
     sequelize: sequelize,
-    motorOil: MO
+    motorOil: motorOil,
+    gearOil: gearOil,
+    antiFreeze: antiFreeze,
+    user: user
 }
