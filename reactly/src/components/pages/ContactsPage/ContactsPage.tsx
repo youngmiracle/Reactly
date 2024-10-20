@@ -1,5 +1,5 @@
 import ButtonDefault from '../../shared/Button/ButtonDefault/ButtonDefault';
-import './contactsPage.css'
+import './contactsPage.css';
 import ContactsInformationSection from '../../widgets/ContactsInformationSection/ContactsInformationSection'
 import photos from '../../../types/photo';
 
