@@ -1,0 +1,60 @@
+.buttonDefault {
+  background-color: #910DC4;
+  font-size: 2vh;
+  border-radius: 50px;
+  height: 50%;
+  width: 100%;
+  color: #dbcbc3;
+  padding: 15px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  -webkit-animation: buttonDefaultHoverBack 0.5s alternate forwards;
+          animation: buttonDefaultHoverBack 0.5s alternate forwards;
+}
+
+.buttonDefaultTrue {
+  background-color: transparent;
+  border: 1px solid #910DC4;
+  color: #910DC4;
+  -webkit-animation: buttonDefaultHoverBack 0.5s alternate forwards;
+          animation: buttonDefaultHoverBack 0.5s alternate forwards;
+}
+
+.buttonDefault:hover {
+  -webkit-animation: buttonDefaultHover 0.7s alternate forwards;
+          animation: buttonDefaultHover 0.7s alternate forwards;
+}
+
+@-webkit-keyframes buttonDefaultHover {
+  100% {
+    -webkit-box-shadow: 1px 1px 15px 1px white;
+            box-shadow: 1px 1px 15px 1px white;
+  }
+}
+
+@keyframes buttonDefaultHover {
+  100% {
+    -webkit-box-shadow: 1px 1px 15px 1px white;
+            box-shadow: 1px 1px 15px 1px white;
+  }
+}
+@-webkit-keyframes buttonDefaultHoverBack {
+  from {
+    -webkit-box-shadow: 1px 1px 15px 1px white;
+            box-shadow: 1px 1px 15px 1px white;
+  }
+  100% {
+    -webkit-box-shadow: 1px 1px 3px 1px rgba(144, 13, 196, 0.5529411765);
+            box-shadow: 1px 1px 3px 1px rgba(144, 13, 196, 0.5529411765);
+  }
+}
+@keyframes buttonDefaultHoverBack {
+  from {
+    -webkit-box-shadow: 1px 1px 15px 1px white;
+            box-shadow: 1px 1px 15px 1px white;
+  }
+  100% {
+    -webkit-box-shadow: 1px 1px 3px 1px rgba(144, 13, 196, 0.5529411765);
+            box-shadow: 1px 1px 3px 1px rgba(144, 13, 196, 0.5529411765);
+  }
+}

@@ -1,0 +1,22 @@
+.productsMain{
+    padding-top: 15vh;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: #dbcbc3;
+    font-weight: 300;
+    .productsPage__title{
+        text-transform: uppercase;
+        font-size: 5vh;
+        letter-spacing: 2px;
+        margin-bottom: 5vh;
+    }
+    .productsPage__assortments{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,404 @@
+.homePage__mainContent {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+}
+.homePage__mainContent .mainContentHome__imgPhon {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.homePage__mainContent .mainContentHome__contentSection {
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  width: 84%;
+  height: 70%;
+  color: #dbcbc3;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.6);
+  border-left: 1px solid hsla(0, 0%, 100%, 0.6);
+  border-right: 1px solid hsla(0, 0%, 100%, 0.6);
+}
+.homePage__mainContent .mainContentHome__contentSection .contentSectionHome__info {
+  width: 40%;
+  margin: 2% 10%;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.homePage__mainContent .mainContentHome__contentSection .contentSectionHome__info .infoHome__title {
+  white-space: nowrap;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 3.5vh;
+  color: #910DC4;
+  line-height: 4.5vh;
+}
+.homePage__mainContent .mainContentHome__contentSection .contentSectionHome__info .infoHome__other {
+  letter-spacing: 2px;
+  font-size: 2vh;
+  color: rgba(219, 203, 195, 0.7254901961);
+}
+.homePage__mainContent .mainContentHome__contentSection .contentSectionHome__promotion {
+  width: 35%;
+  margin: 15% 2%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+.homePage__mainContent .mainContentHome__contentSection .contentSectionHome__promotion .promotionHome__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 40%;
+}
+
+.slideBlock {
+  width: 100%;
+  height: 8vh;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(28%, rgba(0, 0, 6, 0.577)), to(rgb(8, 8, 8)));
+  background: linear-gradient(0deg, rgba(0, 0, 6, 0.577) 28%, rgb(8, 8, 8));
+}
+
+.homePage__promotionSection {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.homePage__promotionSection .promotionSection__titleSection {
+  text-align: right;
+  font-size: 5vh;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #dbcbc3;
+  padding-top: 15vh;
+}
+.homePage__promotionSection .promotionSection__titleSection .promotionSection__titleText {
+  margin-top: 1%;
+  text-transform: none;
+  font-size: 3vh;
+  letter-spacing: 3px;
+  color: rgba(219, 203, 195, 0.8470588235);
+}
+.homePage__promotionSection .promotionSection__content {
+  width: 100%;
+  height: 100%;
+  margin-top: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.homePage__promotionSection .promotionSection__content .promotionSection__info {
+  font-weight: 300;
+  line-height: 4vh;
+  font-size: 2.5vh;
+  width: 25%;
+}
+.homePage__promotionSection .promotionSection__content .promotionSection__contentNav {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.homePage__promotionSection .promotionSection__content .promotionSection__contentNav .promotionSection_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 20%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 2%;
+}
+
+.homePage__infoSection {
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+.homePage__infoSection .infoSection__imgSection {
+  width: 30vw;
+  height: 55vh;
+  border: 1px solid hsla(20, 25%, 81%, 0.3);
+  position: relative;
+}
+.homePage__infoSection .infoSection__imgSection .infoSection__img {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: imgSectionHoverBack 0.3s alternate forwards;
+          animation: imgSectionHoverBack 0.3s alternate forwards;
+}
+.homePage__infoSection .infoSection__imgSection:hover .infoSection__img {
+  -webkit-animation: imgSectionHover 0.3s alternate forwards;
+          animation: imgSectionHover 0.3s alternate forwards;
+}
+.homePage__infoSection .infoSection__textContent {
+  margin-left: 15%;
+  width: 50vw;
+  height: 55vh;
+}
+.homePage__infoSection .infoSection__textContent .infoSection__title {
+  font-size: 5vh;
+  white-space: nowrap;
+  color: #910DC4;
+  font-weight: 500;
+}
+.homePage__infoSection .infoSection__textContent .infoSection__list {
+  line-height: 3vh;
+  margin: 5% 0% 0 10%;
+  font-size: 2.5vh;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+.homePage__infoSection .infoSection__textContent li {
+  margin-bottom: 2vh;
+}
+
+@-webkit-keyframes imgSectionHoverBack {
+  from {
+    top: 0%;
+    left: 0%;
+  }
+  100% {
+    top: 5%;
+    left: 5%;
+  }
+}
+
+@keyframes imgSectionHoverBack {
+  from {
+    top: 0%;
+    left: 0%;
+  }
+  100% {
+    top: 5%;
+    left: 5%;
+  }
+}
+@-webkit-keyframes imgSectionHover {
+  from {
+    top: 5%;
+    left: 5%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes imgSectionHover {
+  from {
+    top: 5%;
+    left: 5%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+.homePage__promotionSectionSecond {
+  padding-top: 12vh;
+  width: 85%;
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.homePage__promotionSectionSecond .promotionSectionSecond__cardList {
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 6vh;
+  position: relative;
+}
+.homePage__promotionSectionSecond .promotionSectionSecond__cardList .cardList__cardExample {
+  position: relative;
+  text-align: center;
+  border-radius: 65px;
+  background: linear-gradient(100deg, rgb(148, 0, 211) 35%, rgb(3, 0, 4) 96%);
+  width: 35%;
+  height: 95%;
+  background-size: 150% 200%;
+  -webkit-animation: gradient 3s alternate infinite;
+          animation: gradient 3s alternate infinite;
+}
+.homePage__promotionSectionSecond .promotionSectionSecond__cardList .cardList__cardExample .cardExample__Link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border-radius: 65px;
+}
+.homePage__promotionSectionSecond .promotionSectionSecond__cardList .cardList__cardExample .cardExample__img {
+  height: 115%;
+  width: 57%;
+  margin-top: -5%;
+}
+.homePage__promotionSectionSecond .promotionSectionSecond__cardList .cardList__cardExampleCenter {
+  width: 40%;
+  z-index: 1;
+  height: 120%;
+  position: absolute;
+  left: 30%;
+  top: 10%;
+}
+.homePage__promotionSectionSecond .promotionSectionSecond__Link {
+  width: 20%;
+  margin: 0 auto;
+  height: 8vh;
+  color: #dbcbc3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3.5vh;
+  border-radius: 45px;
+  background-color: hsla(284, 87%, 6%, 0.99);
+  z-index: 2;
+  border: 1px solid gray;
+}
+.homePage__promotionSectionSecond .promotionSectionSecond__Link:hover {
+  -webkit-animation: promotionSectionSecond__LinkHover 0.5s forwards infinite;
+          animation: promotionSectionSecond__LinkHover 0.5s forwards infinite;
+}
+.homePage__promotionSectionSecond .promotionSectionSecond__title {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 10vh;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  color: #dbcbc3;
+  text-shadow: 2px 2px 15px white;
+  font-size: 5vh;
+  height: 6.5vh;
+  border-radius: 5px;
+  border-bottom: 1px solid #910DC4;
+}
+
+@-webkit-keyframes promotionSectionSecond__LinkHover {
+  from {
+    background-color: hsla(284, 87%, 6%, 0.99);
+    border: 1px solid gray;
+  }
+  100% {
+    background-color: hsla(284, 88%, 10%, 0.99);
+    border: 1px solid rgb(255, 255, 255);
+  }
+}
+
+@keyframes promotionSectionSecond__LinkHover {
+  from {
+    background-color: hsla(284, 87%, 6%, 0.99);
+    border: 1px solid gray;
+  }
+  100% {
+    background-color: hsla(284, 88%, 10%, 0.99);
+    border: 1px solid rgb(255, 255, 255);
+  }
+}
+@-webkit-keyframes gradient {
+  from {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+@keyframes gradient {
+  from {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

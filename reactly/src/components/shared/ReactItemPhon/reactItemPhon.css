@@ -1,0 +1,21 @@
+.reactPhonItem{
+    user-select: none;
+    width: 60%;
+    margin-left: -15%;
+    z-index: -10;
+    top: 20%;
+    position: fixed;
+    object-fit: cover;
+    border: none;
+    animation: rotatea 10s infinite alternate;
+    opacity: 0.1;
+}
+@keyframes rotatea {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(-360deg);
+    }
+}
