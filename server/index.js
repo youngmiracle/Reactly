@@ -1,6 +1,8 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const cors = require('cors')
+const cors = require('cors');
+
+const routers = require('./routes/index');
 
 const app = express();
 
@@ -10,7 +12,6 @@ app.use(cors());
 app.use(express.json());
 
 
-app.use('/products', require('./routes/productsRoute'));
-app.use('/', require('./routes/authRoute'));
+app.use('/api', routers);
 
-app.listen(5000);
+app.listen(3500);
