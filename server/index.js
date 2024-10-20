@@ -1,7 +1,8 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const db = require('./models');
-const cors = require('cors')
+const cors = require('cors');
+
+const routers = require('./routes/index');
 
 const app = express();
 
@@ -11,6 +12,6 @@ app.use(cors());
 app.use(express.json());
 
 
-app.use('/api', require('./routes/OilRoute'));
+app.use('/api', routers);
 
-app.listen(5000);
+app.listen(3500);
