@@ -1,3 +1,4 @@
+const { FOREIGNKEYS } = require('sequelize/lib/query-types');
 const sequelize = require('../db');
 const {DataTypes} = require('sequelize');
 
@@ -76,14 +77,14 @@ BasketProduct.belongsTo(Basket);
 Product.hasMany(BasketProduct);
 BasketProduct.belongsTo(Product);
 
-Product.hasMany(ProductInfo);
-ProductInfo.belongsTo(Product);
+Product.hasMany(ProductInfo, {foreignKey: 'id_product'});
+ProductInfo.belongsTo(Product, {foreignKey: 'id_product'});
 
-Product.hasMany(ProductSize);
-ProductSize.belongsTo(Product);
+Product.hasMany(ProductSize, {foreignKey: 'id_product'});
+ProductSize.belongsTo(Product, {foreignKey: 'id_product'});
 
-Type.hasMany(Product);
-Product.belongsTo(Type);
+Type.hasMany(Product, {foreignKey: 'id_type'});
+Product.belongsTo(Type, {foreignKey: 'id_type'});
 
 module.exports = {
     User,
