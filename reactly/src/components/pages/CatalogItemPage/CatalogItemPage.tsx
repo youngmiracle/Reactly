@@ -10,15 +10,16 @@ import { useEffect, useState } from 'react';
 const CatalogItemPage = () => {
     const nameLinkSession: any = sessionStorage.getItem("linkActiveClass");
 
-    const [typeState, setTypeState] = useState();
+    const [typeState, setTypeState] = useState<any>([]);
   
     useEffect(() => {
-      const apiUrl = 'http://localhost:3500/api/products?id_type=1';
+      const apiUrl = 'http://localhost:3500/api/product?id_type=1';
       axios.get(apiUrl).then((resp) => {
-        const allPersons = resp.data;
-        setTypeState(allPersons);
+        const type = resp.data;
+        setTypeState(type);
+        console.log(typeState)
       }).catch((err) => {
-        console.log(err)
+        console.log(typeState)
       });
     }, [setTypeState]);
   
@@ -28,6 +29,7 @@ const CatalogItemPage = () => {
             {"TransmissionOil" == nameLinkSession ?  <TypeCatalog generalProps={MotorOilData}/> : <></>}
             {"CommercialOil" == nameLinkSession ?  <TypeCatalog generalProps={MotorOilData}/> : <></>}
             {"Antifreeze" == nameLinkSession ?  <TypeCatalog generalProps={MotorOilData}/> : <></>}
+            {typeState}
         </main>
     )
 }
