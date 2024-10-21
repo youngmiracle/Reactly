@@ -1,7 +1,7 @@
 .assortmentCard {
   width: 30%;
   height: 50vh;
-  background-color: rgb(44, 44, 44);
+  background-color: rgba(21, 21, 21, 0.961);
   margin-bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
