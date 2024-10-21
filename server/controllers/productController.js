@@ -22,20 +22,22 @@ class ProductController{
     }
 
     async getAll(req, res, next){
-        const {id_type, limit, page} = req.query;
-        page = page || 1
-        limit = limit || 7
+        let {id_type, limit, page} = req.query;
+        page = Number(page) || 1
+        limit = Number(limit) || 8
         let offset = page * limit - limit;
+        let products;
         if(!id_type){
-            const products = await Product.findAndCountAll({limit, offset});
+            products = await Product.findAndCountAll({limit, offset});
         }else if(id_type){
-            const products = await Product.findAndCountAll({where:{id_type},limit, offset});
+            products = await Product.findAndCountAll({where:{id_type},limit, offset});
         }
         return res.json(products);
     }
     async getOne(req, res, next){
-        const {id_product} = req.params;
-        const product = await Product.findOne({where:{id_product}, include:[{model: ProductInfo, as:'info'}]});
+        let id_product = req.params;
+        id_product = JSON.parse(id_product.id)
+        const product = await Product.findOne({where:{id_product}, include:[{model: ProductInfo, as:'product_infos'}]});
         return res.json(product);
     }
 }
