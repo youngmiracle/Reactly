@@ -28,7 +28,7 @@ var ProductAssortments = exports.ProductAssortments = [{
 }, {
   id: 4,
   logoImg: "https://i.imgur.com/BCgIdlg.png",
-  imageItem: "https://i.imgur.com/dYziye5.png",
+  imageItem: "https://i.imgur.com/JbdvNQl.png",
   titleEng: "Antifreeze",
   titleRus: "Антифризы",
   linkName: "Antifreeze"

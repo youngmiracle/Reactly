@@ -8,6 +8,8 @@ import PromotionSection from '../../widgets/PromotionSection/PromotionSection';
 import InfoSection from '../../widgets/InfoSection/InfoSection';
 import PromotionSectionSecond from '../../widgets/PromotionSection/PromotionSectionSecond';
 import InfoSectionSecond from '../../widgets/InfoSection/InfoSectionSecond';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const MainPage = () => {
 
@@ -18,6 +20,15 @@ const MainPage = () => {
         sessionStorage.setItem("linkActiveClass", nameLink)
         setNameLink(nameLink);
     };
+    const [appState, setAppState] = useState<any>([]);
+  
+  useEffect(() => {
+    const apiUrl = 'http://localhost:3500/api/type';
+    axios.get(apiUrl).then((resp) => {
+      const allPersons = resp.data;
+      setAppState(allPersons);
+    });
+  }, [setAppState]);
 
     return(
         <main>
