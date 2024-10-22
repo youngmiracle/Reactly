@@ -1,7 +1,7 @@
 import './catalogItemPage.css'
 import { LinkContext, useLinkContext } from '../../../types/LinkContext';
 import { ProductAssortments } from '../../../types/ProductAssortments';
-import TypeCatalog from '../../widgets/TypeCatalog/TypeCatalog'
+import PropertySorting from '../../widgets/PropertySorting/PropertySorting'
 import NotFoundPage from '../FoundPage/NotFoundPage';
 import { MotorOilData } from '../../../types/MotorOilData';
 import axios from 'axios';
@@ -12,23 +12,23 @@ const CatalogItemPage = () => {
 
     const [typeState, setTypeState] = useState<any>([]);
   
-    useEffect(() => {
-      const apiUrl = 'http://localhost:3500/api/product?id_type=1';
-      axios.get(apiUrl).then((resp) => {
-        const type = resp.data;
-        setTypeState(type);
-        console.log(typeState)
-      }).catch((err) => {
-        console.log(typeState)
-      });
-    }, [setTypeState]);
+    // useEffect(() => {
+    //   const apiUrl = 'http://localhost:3500/api/product?id_type=1';
+    //   axios.get(apiUrl).then((resp) => {
+    //     const type = resp.data;
+    //     setTypeState(type);
+    //     console.log(typeState)
+    //   }).catch((err) => {
+    //     console.log(typeState)
+    //   });
+    // }, [setTypeState]);
   
     return(
         <main>
-            {"MotorOil" == nameLinkSession ?  <TypeCatalog generalProps={MotorOilData }/> : <></>}
-            {"TransmissionOil" == nameLinkSession ?  <TypeCatalog generalProps={MotorOilData}/> : <></>}
-            {"CommercialOil" == nameLinkSession ?  <TypeCatalog generalProps={MotorOilData}/> : <></>}
-            {"Antifreeze" == nameLinkSession ?  <TypeCatalog generalProps={MotorOilData}/> : <></>}
+            {"MotorOil" == nameLinkSession ?  <PropertySorting generalProps={MotorOilData }/> : <></>}
+            {"TransmissionOil" == nameLinkSession ?  <PropertySorting generalProps={MotorOilData}/> : <></>}
+            {"CommercialOil" == nameLinkSession ?  <PropertySorting generalProps={MotorOilData}/> : <></>}
+            {"Antifreeze" == nameLinkSession ?  <PropertySorting generalProps={MotorOilData}/> : <></>}
             {typeState}
         </main>
     )
