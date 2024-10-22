@@ -25,11 +25,17 @@ const CatalogItemPage = () => {
   
     return(
         <main>
-            {"MotorOil" == nameLinkSession ?  <PropertySorting generalProps={MotorOilData }/> : <></>}
+            {"MotorOil" == nameLinkSession ?  <PropertySorting generalProps={MotorOilData}/> : <></>}
             {"TransmissionOil" == nameLinkSession ?  <PropertySorting generalProps={MotorOilData}/> : <></>}
             {"CommercialOil" == nameLinkSession ?  <PropertySorting generalProps={MotorOilData}/> : <></>}
             {"Antifreeze" == nameLinkSession ?  <PropertySorting generalProps={MotorOilData}/> : <></>}
-            {typeState}
+            <article>
+              <h2>{"MotorOil" == nameLinkSession ? "Моторные масла" : ""}</h2>
+              <h2>{"TransmissionOil" == nameLinkSession ? "Трансимссионые масла" : ""}</h2>
+              <h2>{"CommercialOil" == nameLinkSession ? "Коммерческие масла" : ""}</h2>
+              <h2>{"Antifreeze" == nameLinkSession ? "Антифризы" : ""}</h2>
+              
+            </article>
         </main>
     )
 }
