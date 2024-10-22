@@ -11,15 +11,15 @@ const CatalogItemPage = () => {
     const nameLinkSession: any = sessionStorage.getItem("linkActiveClass");
 
     const [typeState, setTypeState] = useState<any>([]);
-    // console.log(typeState)
+    console.log(typeState)
     useEffect(() => {
       const apiUrl = 'http://localhost:3500/api/product?id_type=2';
       axios.get(apiUrl).then((resp) => {
         const type = resp.data.rows;
         setTypeState(type); 
-        // console.log('всё ок')
+        console.log('всё ок')
       }).catch((err) => {
-        // console.log("ошбика")
+        console.log("ошбика")
       });
     }, [setTypeState]);
   
