@@ -9,6 +9,7 @@ const Images = {
     InfoImagesSecond: require('../components/assets/images/MainPage/infoImagesSecond.png'),
     mailLogo: require('../components/assets/images/Contacts/mailLogo.png'),
     phoneLogo: require('../components/assets/images/Contacts/phoneLogo.png'),
+    arrowBtn: require('../components/assets/images/supportBtn/arrow.png'),
 }
 
 export default Images;

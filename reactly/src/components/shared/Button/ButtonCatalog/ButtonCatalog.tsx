@@ -3,14 +3,17 @@ import './buttonCatalog.css'
 
 interface ButtonCatalogProps{
     onClick: any,
-    Children: any
+    Children: any,
+    type?: any,
 }
 
 
-const ButtonCatalog = ({onClick, Children}: ButtonCatalogProps) => {
+const ButtonCatalog = ({onClick, Children, type}: ButtonCatalogProps) => {
 
     return(
-        <button onClick={onClick}>
+        <button 
+        onClick={onClick}
+        type={type}>
             {Children}
         </button>
     )

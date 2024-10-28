@@ -1,0 +1,15 @@
+.catalogItemPage{
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 10vh;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    height: 100%;
+    .catalogItemPage__productsContent{
+        width: 65%;
+        border: 1px solid yellow;
+    }
+}

@@ -6,6 +6,9 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _react = require("react");
 require("./propertySorting.css");
+var _photo = _interopRequireDefault(require("../../../types/photo"));
+var _ButtonCatalog = _interopRequireDefault(require("../../shared/Button/ButtonCatalog/ButtonCatalog"));
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
@@ -18,11 +21,6 @@ function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" !=
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 var PropertySorting = function PropertySorting(_ref) {
   var generalProps = _ref.generalProps;
-  // const [classNameSell, setArrayChecked] = useState<any>([]);
-  // const [arrayChecked, setArrayChecked] = useState<any>([]);
-  // const [arrayChecked, setArrayChecked] = useState<any>([]);
-  // const [arrayChecked, setArrayChecked] = useState<any>([]);
-
   var _useState = (0, _react.useState)([]),
     _useState2 = _slicedToArray(_useState, 2),
     arrayChecked = _useState2[0],
@@ -42,21 +40,33 @@ var PropertySorting = function PropertySorting(_ref) {
     }
   };
   return /*#__PURE__*/React.createElement("form", {
-    style: {
-      paddingTop: "10vh"
-    }
-  }, /*#__PURE__*/React.createElement("h2", null, "\u041F\u043E\u0434\u0431\u043E\u0440 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u043E\u0432"), /*#__PURE__*/React.createElement("section", null, /*#__PURE__*/React.createElement("section", null, /*#__PURE__*/React.createElement("p", null, "\u0426\u0435\u043D\u0430"), /*#__PURE__*/React.createElement("img", {
-    src: "",
-    alt: ""
+    className: "propertySortingForm"
+  }, /*#__PURE__*/React.createElement("h2", {
+    className: "propertySortingForm__title"
+  }, "\u041F\u043E\u0434\u0431\u043E\u0440 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u043E\u0432"), /*#__PURE__*/React.createElement("section", {
+    className: "propertySortingForm__sortBlock"
+  }, /*#__PURE__*/React.createElement("section", {
+    className: "sortBlock__titleBlock"
+  }, /*#__PURE__*/React.createElement("p", null, "\u0426\u0435\u043D\u0430"), /*#__PURE__*/React.createElement("img", {
+    src: _photo.default.arrowBtn,
+    alt: "#",
+    className: "sortBlock__img"
   }), /*#__PURE__*/React.createElement("button", null)), /*#__PURE__*/React.createElement("section", {
-    className: ""
+    className: "sortBlock__valueBlock"
   }, /*#__PURE__*/React.createElement("input", {
-    type: "number"
+    type: "number",
+    className: "valueBlock__input"
   }), /*#__PURE__*/React.createElement("input", {
-    type: "number"
-  }))), /*#__PURE__*/React.createElement("section", null, /*#__PURE__*/React.createElement("section", null, /*#__PURE__*/React.createElement("p", null, "\u0422\u0438\u043F"), /*#__PURE__*/React.createElement("img", {
-    src: "",
-    alt: ""
+    type: "number",
+    className: "valueBlock__input"
+  }))), /*#__PURE__*/React.createElement("section", {
+    className: "propertySortingForm__sortBlock"
+  }, /*#__PURE__*/React.createElement("section", {
+    className: "sortBlock__titleBlock"
+  }, /*#__PURE__*/React.createElement("p", null, "\u0422\u0438\u043F"), /*#__PURE__*/React.createElement("img", {
+    src: _photo.default.arrowBtn,
+    alt: "#",
+    className: "sortBlock__img"
   }), /*#__PURE__*/React.createElement("button", null)), generalProps.typeAll.map(function (props) {
     return /*#__PURE__*/React.createElement("p", {
       key: props.id
@@ -66,9 +76,14 @@ var PropertySorting = function PropertySorting(_ref) {
         return checkedInputSort(props.type);
       }
     }));
-  })), /*#__PURE__*/React.createElement("section", null, /*#__PURE__*/React.createElement("section", null, /*#__PURE__*/React.createElement("p", null, "\u0412\u044F\u0437\u043A\u043E\u0441\u0442\u044C \u043F\u043E SAE"), /*#__PURE__*/React.createElement("img", {
-    src: "",
-    alt: ""
+  })), /*#__PURE__*/React.createElement("section", {
+    className: "propertySortingForm__sortBlock"
+  }, /*#__PURE__*/React.createElement("section", {
+    className: "sortBlock__titleBlock"
+  }, /*#__PURE__*/React.createElement("p", null, "\u0412\u044F\u0437\u043A\u043E\u0441\u0442\u044C \u043F\u043E SAE"), /*#__PURE__*/React.createElement("img", {
+    src: _photo.default.arrowBtn,
+    alt: "#",
+    className: "sortBlock__img"
   }), /*#__PURE__*/React.createElement("button", null)), generalProps.SAEAll.map(function (props) {
     return /*#__PURE__*/React.createElement("p", {
       key: props.id
@@ -78,9 +93,14 @@ var PropertySorting = function PropertySorting(_ref) {
         return checkedInputSort(props.SAE);
       }
     }));
-  })), /*#__PURE__*/React.createElement("section", null, /*#__PURE__*/React.createElement("section", null, /*#__PURE__*/React.createElement("p", null, "\u0421\u043F\u0435\u0446\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044F"), /*#__PURE__*/React.createElement("img", {
-    src: "",
-    alt: ""
+  })), /*#__PURE__*/React.createElement("section", {
+    className: "propertySortingForm__sortBlock"
+  }, /*#__PURE__*/React.createElement("section", {
+    className: "sortBlock__titleBlock"
+  }, /*#__PURE__*/React.createElement("p", null, "\u0421\u043F\u0435\u0446\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044F"), /*#__PURE__*/React.createElement("img", {
+    src: _photo.default.arrowBtn,
+    alt: "#",
+    className: "sortBlock__img"
   }), /*#__PURE__*/React.createElement("button", null)), generalProps.SpecificalAll.map(function (props) {
     return /*#__PURE__*/React.createElement("p", {
       key: props.id
@@ -90,17 +110,18 @@ var PropertySorting = function PropertySorting(_ref) {
         return checkedInputSort(props.specifical);
       }
     }));
-  })), /*#__PURE__*/React.createElement("button", {
+  })), /*#__PURE__*/React.createElement(_ButtonCatalog.default, {
     type: "button",
     onClick: function onClick() {
       return console.log(arrayChecked);
-    }
-  }, "\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C"), /*#__PURE__*/React.createElement("input", {
+    },
+    Children: "\u041F\u043E\u043A\u0430\u0437\u0430\u0442\u044C"
+  }), /*#__PURE__*/React.createElement(_ButtonCatalog.default, {
     type: "reset",
-    value: "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C",
     onClick: function onClick() {
       return setArrayChecked([]);
-    }
+    },
+    Children: "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C"
   }));
 };
 var _default = exports.default = PropertySorting;

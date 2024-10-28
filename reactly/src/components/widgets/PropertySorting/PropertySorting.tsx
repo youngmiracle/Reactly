@@ -1,16 +1,11 @@
 import { useState } from 'react'
 import './propertySorting.css'
-
+import Photos from '../../../types/photo'
+import ButtonCatalog from '../../shared/Button/ButtonCatalog/ButtonCatalog';
 
 
 
 const PropertySorting = ({generalProps}: any) => {
-    // const [classNameSell, setArrayChecked] = useState<any>([]);
-    // const [arrayChecked, setArrayChecked] = useState<any>([]);
-    // const [arrayChecked, setArrayChecked] = useState<any>([]);
-    // const [arrayChecked, setArrayChecked] = useState<any>([]);
-
-
 
     const [arrayChecked, setArrayChecked] = useState<any>([]);
     const checkedInputSort = (props: " " | "type" | "SAE" | "specifical" | null) => {
@@ -28,24 +23,23 @@ const PropertySorting = ({generalProps}: any) => {
 
 
     return(
-        <form style={{paddingTop: "10vh"}}>
-            <h2>Подбор параметров</h2>
-            
-            <section>
-                <section>
+        <form className='propertySortingForm'>
+            <h2 className='propertySortingForm__title'>Подбор параметров</h2>
+            <section className='propertySortingForm__sortBlock'>
+                <section className='sortBlock__titleBlock'>
                     <p>Цена</p>
-                    <img src="" alt="" />
+                    <img src={Photos.arrowBtn} alt="#" className='sortBlock__img'/>
                     <button></button>
                 </section>
-                <section className=''>
-                    <input type="number" />
-                    <input type="number" />
+                <section className='sortBlock__valueBlock'>
+                    <input type="number" className='valueBlock__input'/>
+                    <input type="number" className='valueBlock__input'/>
                 </section>
             </section>
-            <section>
-                <section>
+            <section className='propertySortingForm__sortBlock'>
+                <section className='sortBlock__titleBlock'>
                     <p>Тип</p>
-                    <img src="" alt="" />
+                    <img src={Photos.arrowBtn} alt="#" className='sortBlock__img'/>
                     <button></button>
                 </section>
                 {generalProps.typeAll.map((props: any) => {
@@ -58,10 +52,10 @@ const PropertySorting = ({generalProps}: any) => {
                 })}
             </section>
             
-            <section>
-                <section>
+            <section className='propertySortingForm__sortBlock'>
+                <section className='sortBlock__titleBlock'>
                     <p>Вязкость по SAE</p>
-                    <img src="" alt="" />
+                    <img src={Photos.arrowBtn} alt="#" className='sortBlock__img'/>
                     <button></button>
                 </section>
                 {generalProps.SAEAll.map((props: any) => {
@@ -74,10 +68,10 @@ const PropertySorting = ({generalProps}: any) => {
                 })}
              </section>
              
-             <section>
-                <section>
+             <section className='propertySortingForm__sortBlock'>
+                <section className='sortBlock__titleBlock'>
                     <p>Спецификация</p>
-                    <img src="" alt="" />
+                    <img src={Photos.arrowBtn} alt="#" className='sortBlock__img'/>
                     <button></button>
                 </section>
                 {generalProps.SpecificalAll.map((props: any) => {
@@ -89,8 +83,8 @@ const PropertySorting = ({generalProps}: any) => {
                     )
                 })}
              </section>
-            <button type='button' onClick={() => console.log(arrayChecked)}>Показать</button>
-            <input type="reset" value="Сбросить" onClick={() => setArrayChecked([])}/>
+            <ButtonCatalog type='button' onClick={() => console.log(arrayChecked)} Children="Показать"/>
+            <ButtonCatalog type="reset" onClick={() => setArrayChecked([])} Children="Сбросить"/>
         </form>
         
     )
