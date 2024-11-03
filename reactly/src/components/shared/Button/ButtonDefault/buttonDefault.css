@@ -27,21 +27,21 @@
 
 @-webkit-keyframes buttonDefaultHover {
   100% {
-    -webkit-box-shadow: 1px 1px 15px 1px white;
-            box-shadow: 1px 1px 15px 1px white;
+    -webkit-box-shadow: 1px 1px 5px 1px white;
+            box-shadow: 1px 1px 5px 1px white;
   }
 }
 
 @keyframes buttonDefaultHover {
   100% {
-    -webkit-box-shadow: 1px 1px 15px 1px white;
-            box-shadow: 1px 1px 15px 1px white;
+    -webkit-box-shadow: 1px 1px 5px 1px white;
+            box-shadow: 1px 1px 5px 1px white;
   }
 }
 @-webkit-keyframes buttonDefaultHoverBack {
   from {
-    -webkit-box-shadow: 1px 1px 15px 1px white;
-            box-shadow: 1px 1px 15px 1px white;
+    -webkit-box-shadow: 1px 1px 5px 1px white;
+            box-shadow: 1px 1px 5px 1px white;
   }
   100% {
     -webkit-box-shadow: 1px 1px 3px 1px rgba(144, 13, 196, 0.5529411765);
@@ -50,8 +50,8 @@
 }
 @keyframes buttonDefaultHoverBack {
   from {
-    -webkit-box-shadow: 1px 1px 15px 1px white;
-            box-shadow: 1px 1px 15px 1px white;
+    -webkit-box-shadow: 1px 1px 5px 1px white;
+            box-shadow: 1px 1px 5px 1px white;
   }
   100% {
     -webkit-box-shadow: 1px 1px 3px 1px rgba(144, 13, 196, 0.5529411765);

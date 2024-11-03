@@ -1,15 +1,28 @@
 .catalogItemPage{
-    width: 100%;
+    width: 90%;
     overflow-x: hidden;
-    padding-top: 10vh;
-    border: 1px solid red;
+    padding-top: 12vh;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
     height: 100%;
     .catalogItemPage__productsContent{
-        width: 65%;
-        border: 1px solid yellow;
+        width: 75%;     
+        padding: 2% 3%; 
+        .productsContent__title{
+            font-size: 5vh;
+            letter-spacing: 3px;
+            font-weight: 300;
+            margin-bottom: 5vh;
+        }
+        .productsContent__itemCatalog{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            flex-wrap: wrap;
+        }
     }
 }

@@ -25,6 +25,13 @@ var PropertySorting = function PropertySorting(_ref) {
     _useState2 = _slicedToArray(_useState, 2),
     arrayChecked = _useState2[0],
     setArrayChecked = _useState2[1];
+  var _useState3 = (0, _react.useState)([]),
+    _useState4 = _slicedToArray(_useState3, 2),
+    arrowActive = _useState4[0],
+    setArrowActive = _useState4[1];
+  var arrowActiveFun = function arrowActiveFun(id) {
+    setArrowActive(id);
+  };
   var checkedInputSort = function checkedInputSort(props) {
     try {
       if (!arrayChecked.includes(props)) {
@@ -47,70 +54,94 @@ var PropertySorting = function PropertySorting(_ref) {
     className: "propertySortingForm__sortBlock"
   }, /*#__PURE__*/React.createElement("section", {
     className: "sortBlock__titleBlock"
-  }, /*#__PURE__*/React.createElement("p", null, "\u0426\u0435\u043D\u0430"), /*#__PURE__*/React.createElement("img", {
-    src: _photo.default.arrowBtn,
-    alt: "#",
-    className: "sortBlock__img"
-  }), /*#__PURE__*/React.createElement("button", null)), /*#__PURE__*/React.createElement("section", {
+  }, /*#__PURE__*/React.createElement("p", null, "\u0426\u0435\u043D\u0430 ", /*#__PURE__*/React.createElement("span", {
+    className: "".concat(arrowActive == 1 ? "sortBlock__arrow sortBlock__arrowReverse" : "sortBlock__arrow")
+  }, "^")), /*#__PURE__*/React.createElement("button", {
+    className: "sortBlock__btn",
+    onClick: function onClick() {
+      return arrowActiveFun(1);
+    },
+    type: "button"
+  })), /*#__PURE__*/React.createElement("section", {
     className: "sortBlock__valueBlock"
   }, /*#__PURE__*/React.createElement("input", {
     type: "number",
-    className: "valueBlock__input"
+    className: "valueBlock__input",
+    placeholder: "\u041C\u0438\u043D"
   }), /*#__PURE__*/React.createElement("input", {
     type: "number",
-    className: "valueBlock__input"
+    className: "valueBlock__input",
+    placeholder: "\u041C\u0430\u043A\u0441"
   }))), /*#__PURE__*/React.createElement("section", {
     className: "propertySortingForm__sortBlock"
   }, /*#__PURE__*/React.createElement("section", {
     className: "sortBlock__titleBlock"
-  }, /*#__PURE__*/React.createElement("p", null, "\u0422\u0438\u043F"), /*#__PURE__*/React.createElement("img", {
-    src: _photo.default.arrowBtn,
-    alt: "#",
-    className: "sortBlock__img"
-  }), /*#__PURE__*/React.createElement("button", null)), generalProps.typeAll.map(function (props) {
+  }, /*#__PURE__*/React.createElement("p", null, "\u0422\u0438\u043F ", /*#__PURE__*/React.createElement("span", {
+    className: "sortBlock__arrow ".concat(arrowActive == 2 ? "sortBlock__arrowReverse" : "")
+  }, "^")), /*#__PURE__*/React.createElement("button", {
+    className: "sortBlock__btn",
+    onClick: function onClick() {
+      return arrowActiveFun(2);
+    },
+    type: "button"
+  })), generalProps.typeAll.map(function (props) {
     return /*#__PURE__*/React.createElement("p", {
-      key: props.id
-    }, props.type, /*#__PURE__*/React.createElement("input", {
+      key: props.id,
+      className: "sortBlock__select"
+    }, /*#__PURE__*/React.createElement("input", {
       type: "checkbox",
       onClick: function onClick() {
         return checkedInputSort(props.type);
-      }
-    }));
+      },
+      className: "sortBlock__inputCheckBox"
+    }), "\xA0", props.type);
   })), /*#__PURE__*/React.createElement("section", {
     className: "propertySortingForm__sortBlock"
   }, /*#__PURE__*/React.createElement("section", {
     className: "sortBlock__titleBlock"
-  }, /*#__PURE__*/React.createElement("p", null, "\u0412\u044F\u0437\u043A\u043E\u0441\u0442\u044C \u043F\u043E SAE"), /*#__PURE__*/React.createElement("img", {
-    src: _photo.default.arrowBtn,
-    alt: "#",
-    className: "sortBlock__img"
-  }), /*#__PURE__*/React.createElement("button", null)), generalProps.SAEAll.map(function (props) {
+  }, /*#__PURE__*/React.createElement("p", null, "\u0412\u044F\u0437\u043A\u043E\u0441\u0442\u044C \u043F\u043E SAE ", /*#__PURE__*/React.createElement("span", {
+    className: "sortBlock__arrow ".concat(arrowActive == 3 ? "sortBlock__arrowReverse" : "")
+  }, "^")), /*#__PURE__*/React.createElement("button", {
+    className: "sortBlock__btn",
+    onClick: function onClick() {
+      return arrowActiveFun(3);
+    },
+    type: "button"
+  })), generalProps.SAEAll.map(function (props) {
     return /*#__PURE__*/React.createElement("p", {
-      key: props.id
-    }, props.SAE, /*#__PURE__*/React.createElement("input", {
+      key: props.id,
+      className: "sortBlock__select"
+    }, /*#__PURE__*/React.createElement("input", {
       type: "checkbox",
       onClick: function onClick() {
         return checkedInputSort(props.SAE);
       }
-    }));
+    }), "\xA0", props.SAE);
   })), /*#__PURE__*/React.createElement("section", {
     className: "propertySortingForm__sortBlock"
   }, /*#__PURE__*/React.createElement("section", {
     className: "sortBlock__titleBlock"
-  }, /*#__PURE__*/React.createElement("p", null, "\u0421\u043F\u0435\u0446\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044F"), /*#__PURE__*/React.createElement("img", {
-    src: _photo.default.arrowBtn,
-    alt: "#",
-    className: "sortBlock__img"
-  }), /*#__PURE__*/React.createElement("button", null)), generalProps.SpecificalAll.map(function (props) {
+  }, /*#__PURE__*/React.createElement("p", null, "\u0421\u043F\u0435\u0446\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044F ", /*#__PURE__*/React.createElement("span", {
+    className: "sortBlock__arrow ".concat(arrowActive == 4 ? "sortBlock__arrowReverse" : "")
+  }, "^")), /*#__PURE__*/React.createElement("button", {
+    className: "sortBlock__btn",
+    onClick: function onClick() {
+      return arrowActiveFun(4);
+    },
+    type: "button"
+  })), generalProps.SpecificalAll.map(function (props) {
     return /*#__PURE__*/React.createElement("p", {
-      key: props.id
-    }, props.specifical, /*#__PURE__*/React.createElement("input", {
+      key: props.id,
+      className: "sortBlock__select"
+    }, /*#__PURE__*/React.createElement("input", {
       type: "checkbox",
       onClick: function onClick() {
         return checkedInputSort(props.specifical);
       }
-    }));
-  })), /*#__PURE__*/React.createElement(_ButtonCatalog.default, {
+    }), "\xA0", props.specifical);
+  })), /*#__PURE__*/React.createElement("section", {
+    className: "propertySortingForm__btnBlock"
+  }, /*#__PURE__*/React.createElement(_ButtonCatalog.default, {
     type: "button",
     onClick: function onClick() {
       return console.log(arrayChecked);
@@ -122,6 +153,6 @@ var PropertySorting = function PropertySorting(_ref) {
       return setArrayChecked([]);
     },
     Children: "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C"
-  }));
+  })));
 };
 var _default = exports.default = PropertySorting;

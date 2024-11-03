@@ -11,7 +11,7 @@ export const ProductAssortments: ProductAssortmentsProps[] = [
     {
         id: 1,
         logoImg: "https://i.imgur.com/BCgIdlg.png",
-        imageItem: "https://i.imgur.com/Sr7Rdrb.png",
+        imageItem: require('../components/assets/images/Products/MotorOil.png'),
         titleEng: "Motor oils",
         titleRus: "Моторные масла",
         linkName: "MotorOil"
@@ -19,7 +19,7 @@ export const ProductAssortments: ProductAssortmentsProps[] = [
     {
         id: 2,
         logoImg: "https://i.imgur.com/BCgIdlg.png",
-        imageItem: "https://i.imgur.com/XKfzfE6.png",
+        imageItem: require('../components/assets/images/Products/transmissionOil.png'),
         titleEng: "Transsmision oils",
         titleRus: "Трансмиссионные масла",
         linkName: "TransmissionOil"
@@ -27,7 +27,7 @@ export const ProductAssortments: ProductAssortmentsProps[] = [
     {
         id: 3,
         logoImg: "https://i.imgur.com/BCgIdlg.png",
-        imageItem: "https://i.imgur.com/np859kl.png",
+        imageItem: require('../components/assets/images/Products/commercialOil.png'),
         titleEng: "Oils for commercial vehicles",
         titleRus: "Масла для коммерческой техники",
         linkName: "CommercialOil"

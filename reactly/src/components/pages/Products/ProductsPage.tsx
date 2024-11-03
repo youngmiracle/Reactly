@@ -1,11 +1,7 @@
 import './productsPage.css';
 import { ProductAssortments } from '../../../types/ProductAssortments';
-import { Link } from "react-router-dom";
 import AssortmentCard from "../../widgets/AssortmentCard/AssortmentCard";
 import { useLinkContext } from '../../../types/LinkContext'
-import { LinkContextType } from '../../../types/LinkContext';
-import Images from '../../../types/photo';
-import ReactItemPhon from '../../shared/ReactItemPhon/ReactItemPhon';
 
 const ProductsPage = () => {
     

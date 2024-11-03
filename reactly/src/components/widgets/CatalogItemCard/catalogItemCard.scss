@@ -1,0 +1,58 @@
+.catalogItemCard{
+    width: 32%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    font-size: 1.7vh;
+    line-height: 2.5vh;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    margin-right: 1%;
+    padding: 0 .5vw 1.5vh .5vw;
+    font-weight: 300; 
+    .catalogItemCard__img{
+        min-height: 52%;
+        min-width: 70%;
+        object-fit: contain;
+    }
+    .catalogItemCard__title{
+        font-weight: 500;       
+        font-size: 1.8vh;
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+    .catalogItemCard__List{
+        min-height: 25%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: scroll;
+    }
+    li{
+        list-style: none;
+    }
+    .textStrong{
+        color: #bd15ff;
+        font-weight: 500;
+    }
+    .list__size{
+        border: 1.5px solid purple;
+        padding: 0 4px;
+        margin-right: .5vw;
+        border-radius: 5px;
+    }
+}
+.catalogItemCard:hover{
+    animation: catalogItemCardHover .5s forwards alternate;
+}
+
+@keyframes catalogItemCardHover {
+    100%{
+        background-color: #ffffff0f;
+        box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.406);
+    }
+}
