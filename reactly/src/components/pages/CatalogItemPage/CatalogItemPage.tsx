@@ -50,9 +50,9 @@ const CatalogItemPage = () => {
             {"CommercialOil" == nameLinkSession ?  <PropertySorting generalProps={CommercialOilData}/> : <></>}
             {"Antifreeze" == nameLinkSession ?  <PropertySorting generalProps={MotorOilData}/> : <></>}
             <article className='catalogItemPage__productsContent'>
-              <h2 className='productsContent__title'>{"MotorOil" == nameLinkSession ? "Моторные масла" : ""}{"TransmissionOil" == nameLinkSession ? "Трансимссионые масла" : ""}{"CommercialOil" == nameLinkSession ? "Коммерческие масла" : ""}{"Antifreeze" == nameLinkSession ? "Антифризы" : ""}</h2>
+              <h2 className='productsContent__title'>{"MotorOil" == nameLinkSession ? "Моторные масла" : ""}{"TransmissionOil" == nameLinkSession ? "Трансимссионные масла" : ""}{"CommercialOil" == nameLinkSession ? "Коммерческие масла" : ""}{"Antifreeze" == nameLinkSession ? "Антифризы" : ""}</h2>
               <article className='productsContent__itemCatalog'>
-                {product.map((props: any) => {
+                {product.map((props: any) => { 
                 return(
                     <CatalogItemCard key={props.id_product} productImage={props.img} 
                     productName={props.name} productSize={props.product_sizes} productPrice={props.product_sizes} 

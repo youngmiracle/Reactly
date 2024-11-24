@@ -29,19 +29,6 @@ header .header__nav .header__logo {
   width: 10%;
   height: 130%;
 }
-header .header__nav .header__link {
-  letter-spacing: 1px;
-  font-size: 2vh;
-  color: #dbcbc3;
-  font-weight: 300;
-}
-header .header__nav .header__link:hover {
-  font-weight: 400;
-}
-header .header__nav .header__linkActive {
-  border-bottom: 1px solid hsla(283, 88%, 41%, 0.6);
-  font-weight: 400;
-}
 
 .headerScroll {
   -webkit-animation: scrollHeader 0.7s alternate forwards;
@@ -55,18 +42,24 @@ header .header__nav .header__linkActive {
 
 @-webkit-keyframes scrollHeader {
   100% {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(148, 0, 211, 0.4196078431);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
   }
 }
 
 @keyframes scrollHeader {
   100% {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(148, 0, 211, 0.4196078431);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
   }
 }
 @-webkit-keyframes scrollHeaderBack {
   from {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(148, 0, 211, 0.4196078431);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
   }
   100% {
     background-color: transparent;
@@ -74,7 +67,9 @@ header .header__nav .header__linkActive {
 }
 @keyframes scrollHeaderBack {
   from {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(148, 0, 211, 0.4196078431);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
   }
   100% {
     background-color: transparent;

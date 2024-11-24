@@ -96,7 +96,7 @@ var CatalogItemPage = function CatalogItemPage() {
     className: "catalogItemPage__productsContent"
   }, /*#__PURE__*/React.createElement("h2", {
     className: "productsContent__title"
-  }, "MotorOil" == nameLinkSession ? "Моторные масла" : "", "TransmissionOil" == nameLinkSession ? "Трансимссионые масла" : "", "CommercialOil" == nameLinkSession ? "Коммерческие масла" : "", "Antifreeze" == nameLinkSession ? "Антифризы" : ""), /*#__PURE__*/React.createElement("article", {
+  }, "MotorOil" == nameLinkSession ? "Моторные масла" : "", "TransmissionOil" == nameLinkSession ? "Трансимссионные масла" : "", "CommercialOil" == nameLinkSession ? "Коммерческие масла" : "", "Antifreeze" == nameLinkSession ? "Антифризы" : ""), /*#__PURE__*/React.createElement("article", {
     className: "productsContent__itemCatalog"
   }, product.map(function (props) {
     return /*#__PURE__*/React.createElement(_CatalogItemCard.default, {

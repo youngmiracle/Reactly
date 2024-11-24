@@ -29,13 +29,15 @@ var ContactsPage = function ContactsPage() {
     className: "asideArticle__aside"
   }, /*#__PURE__*/React.createElement("h3", {
     className: "aside_title"
-  }, "\u042E\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0430\u0434\u0440\u0435\u0441:"), /*#__PURE__*/React.createElement("p", null, "\u0420\u043E\u0441\u0441\u0438\u044F, 654776, \u0433.\u0427\u0438\u0442\u0430, \u043C\u043A-\u0440 \u042E\u0436\u043D\u044B\u0439, \u0434\u043E\u043C 13, \u043E\u0444\u0438\u0441 40.")), /*#__PURE__*/React.createElement("aside", {
+  }, "\u042E\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0430\u0434\u0440\u0435\u0441: "), /*#__PURE__*/React.createElement("p", null, "\u0420\u043E\u0441\u0441\u0438\u044F, 654776, \u0433.\u0427\u0438\u0442\u0430, \u043C\u043A-\u0440 \u042E\u0436\u043D\u044B\u0439, \u0434\u043E\u043C 13, \u043E\u0444\u0438\u0441 40.")), /*#__PURE__*/React.createElement("aside", {
     className: "asideArticle__aside"
   }, /*#__PURE__*/React.createElement("h3", {
     className: "aside_title"
   }, "\u0427\u0430\u0441\u044B \u0440\u0430\u0431\u043E\u0442\u044B:"), /*#__PURE__*/React.createElement("p", null, "\u041F\u041D-\u041F\u0422: 9:00-20:00", /*#__PURE__*/React.createElement("br", null), "\u0421\u0411-\u0412\u0421: \u0432\u044B\u0445\u043E\u0434\u043D\u043E\u0439"))), /*#__PURE__*/React.createElement("article", {
     className: "contactsMain__menuArticle"
-  }, /*#__PURE__*/React.createElement("form", {
+  }, /*#__PURE__*/React.createElement("h3", {
+    className: "menuArticle__title"
+  }, "\u0417\u0430\u043F\u043E\u043B\u043D\u0438\u0442\u0435 \u0444\u043E\u0440\u043C\u0443 \u0435\u0441\u043B\u0438 \u0445\u043E\u0442\u0438\u0442\u0435 \u0447\u0442\u043E\u0431\u044B \u0441 \u0432\u0430\u043C\u0438 \u0441\u0432\u044F\u0437\u0430\u043B\u0441\u044F \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0441\u0442:"), /*#__PURE__*/React.createElement("form", {
     className: "menuArticle__form"
   }, /*#__PURE__*/React.createElement("input", {
     type: "text",
