@@ -1,5 +1,5 @@
 .catalogItemCard {
-  width: 32%;
+  width: 33%;
   height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,7 +19,6 @@
   line-height: 2.5vh;
   letter-spacing: 2px;
   border-radius: 10px;
-  margin-right: 1%;
   padding: 0 0.5vw 1.5vh 0.5vw;
   font-weight: 300;
 }
@@ -45,12 +44,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   overflow: scroll;
 }
 .catalogItemCard li {
+  margin-bottom: 1.5%;
   list-style: none;
 }
 .catalogItemCard .textStrong {

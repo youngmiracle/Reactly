@@ -1,0 +1,36 @@
+.header__link{
+    letter-spacing: 1px;
+    font-size: 2vh;
+    color: #dbcbc3;
+    font-weight: 300;
+    background-color: transparent;
+    text-align: left;
+    min-height: 2vh;
+}
+.header__link:hover{
+    font-weight: 400;
+}
+.header__linkActive{
+    padding-bottom: 2px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.557);
+    font-weight: 400;
+}
+.header__linkActiveFooter{
+    background: linear-gradient(270deg, #9400D3, white);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 2s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

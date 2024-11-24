@@ -35,7 +35,9 @@ var ContactsPage = function ContactsPage() {
     className: "aside_title"
   }, "\u0427\u0430\u0441\u044B \u0440\u0430\u0431\u043E\u0442\u044B:"), /*#__PURE__*/React.createElement("p", null, "\u041F\u041D-\u041F\u0422: 9:00-20:00", /*#__PURE__*/React.createElement("br", null), "\u0421\u0411-\u0412\u0421: \u0432\u044B\u0445\u043E\u0434\u043D\u043E\u0439"))), /*#__PURE__*/React.createElement("article", {
     className: "contactsMain__menuArticle"
-  }, /*#__PURE__*/React.createElement("form", {
+  }, /*#__PURE__*/React.createElement("h3", {
+    className: "menuArticle__title"
+  }, "\u0417\u0430\u043F\u043E\u043B\u043D\u0438\u0442\u0435 \u0444\u043E\u0440\u043C\u0443 \u0435\u0441\u043B\u0438 \u0445\u043E\u0442\u0438\u0442\u0435 \u0447\u0442\u043E\u0431\u044B \u0441 \u0432\u0430\u043C\u0438 \u0441\u0432\u044F\u0437\u0430\u043B\u0441\u044F \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0441\u0442:"), /*#__PURE__*/React.createElement("form", {
     className: "menuArticle__form"
   }, /*#__PURE__*/React.createElement("input", {
     type: "text",

@@ -45,7 +45,6 @@ const MainPage = () => {
                     </section>
                 </section>
             </article>
-            <div className="slideBlock"></div>
             <PromotionSection/>
             <InfoSection/>
             <PromotionSectionSecond/>

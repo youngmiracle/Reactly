@@ -20,6 +20,7 @@ const ContactsPage = () => {
                 </aside>
             </article>
             <article className='contactsMain__menuArticle'>
+                <h3 className='menuArticle__title'>Заполните форму если хотите чтобы с вами связался специалист:</h3>
                 <form className='menuArticle__form'>
                     <input type="text" className='menuArticle__input' placeholder='ФИО*'/>
                     <input type="tel" className='menuArticle__input' placeholder='Ваш телефон*'/>

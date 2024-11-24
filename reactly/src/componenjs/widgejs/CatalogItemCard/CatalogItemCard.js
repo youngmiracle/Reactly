@@ -35,6 +35,7 @@ var CatalogItemCard = function CatalogItemCard(_ref) {
     var result = rub / 97.52;
     return Number(result.toFixed(2));
   };
+  var nameLinkSession = sessionStorage.getItem("linkActiveClass"); //Получаем значение из sessionstorage и храним там какая страница и с каким маслом открыта
   return /*#__PURE__*/React.createElement("section", {
     className: "catalogItemCard"
   }, /*#__PURE__*/React.createElement("img", {
@@ -47,7 +48,7 @@ var CatalogItemCard = function CatalogItemCard(_ref) {
     }
   }), /*#__PURE__*/React.createElement("h3", {
     className: "catalogItemCard__title"
-  }, "\u041C\u043E\u0442\u043E\u0440\u043D\u043E\u0435 \u043C\u0430\u0441\u043B\u043E Reactly ", productName), /*#__PURE__*/React.createElement("ul", {
+  }, "MotorOil" == nameLinkSession ? "Моторное масло" : "", "TransmissionOil" == nameLinkSession ? "Трансимссионное масло" : "", "CommercialOil" == nameLinkSession ? "Коммерческое масло" : "", "Antifreeze" == nameLinkSession ? "Антифриз" : "", " ", productName), /*#__PURE__*/React.createElement("ul", {
     className: "catalogItemCard__List"
   }, /*#__PURE__*/React.createElement("li", null, "\u0412\u0438\u0434\u044B \u0444\u0430\u0441\u043E\u0432\u043E\u043A: ", productSize.map(function (size) {
     return /*#__PURE__*/React.createElement("span", {
@@ -66,19 +67,23 @@ var CatalogItemCard = function CatalogItemCard(_ref) {
     className: "textStrong"
   }, productInfo.map(function (info) {
     return info.title == "type" ? info.description : "";
-  }))), /*#__PURE__*/React.createElement("li", null, "\u0412\u044F\u0437\u043A\u043E\u0441\u0442\u044C \u043F\u043E SAE: ", /*#__PURE__*/React.createElement("strong", {
-    className: "textStrong"
-  }, productInfo.map(function (info) {
-    return info.title == "SAE" ? info.description : "";
-  }))), /*#__PURE__*/React.createElement("li", null, "API: ", /*#__PURE__*/React.createElement("strong", {
-    className: "textStrong"
-  }, productInfo.map(function (info) {
-    return info.title == "API" ? info.description : "";
-  }), ",\xA0", productInfo.map(function (info) {
-    return info.title == "ILSAC" ? " ILSAC ".concat(info.description) : "";
-  }), productInfo.map(function (info) {
-    return info.title == "ACEA" ? "ACEA ".concat(info.description) : "";
-  })))), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement(_ButtonCatalog.default, {
+  }))), productInfo.map(function (info) {
+    return /*#__PURE__*/React.createElement(React.Fragment, null, info.title == "SAE" ? /*#__PURE__*/React.createElement("li", null, "\u0412\u044F\u0437\u043A\u043E\u0441\u0442\u044C \u043F\u043E SAE: ", /*#__PURE__*/React.createElement("strong", {
+      className: "textStrong"
+    }, info.description)) : "");
+  }), /*#__PURE__*/React.createElement("li", null, "\u0421\u043F\u0435\u0446\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044F:\xA0", productInfo.map(function (info) {
+    return /*#__PURE__*/React.createElement("strong", {
+      className: "textStrong"
+    }, info.title == "API" ? /*#__PURE__*/React.createElement("span", null, "API: ", info.description) : "", info.title == "ILSAC" ? /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: "#dbcbc3"
+      }
+    }, ","), " ILSAC: ", info.description) : "", info.title == "API" ? /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: "#dbcbc3"
+      }
+    }, ","), " ACEA: ", info.description) : "");
+  }))), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement(_ButtonCatalog.default, {
     width: "70%",
     Children: "\u041A\u0443\u043F\u0438\u0442\u044C",
     onClick: function onClick() {

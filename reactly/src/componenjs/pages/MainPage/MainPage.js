@@ -72,8 +72,6 @@ var MainPage = function MainPage() {
     height: "50%",
     width: "10 0%",
     left: "25%"
-  }, "\u0412\u044B\u0431\u0440\u0430\u0442\u044C \u0442\u043E\u0432\u0430\u0440"))))), /*#__PURE__*/React.createElement("div", {
-    className: "slideBlock"
-  }), /*#__PURE__*/React.createElement(_PromotionSection.default, null), /*#__PURE__*/React.createElement(_InfoSection.default, null), /*#__PURE__*/React.createElement(_PromotionSectionSecond.default, null), /*#__PURE__*/React.createElement(_InfoSectionSecond.default, null));
+  }, "\u0412\u044B\u0431\u0440\u0430\u0442\u044C \u0442\u043E\u0432\u0430\u0440"))))), /*#__PURE__*/React.createElement(_PromotionSection.default, null), /*#__PURE__*/React.createElement(_InfoSection.default, null), /*#__PURE__*/React.createElement(_PromotionSectionSecond.default, null), /*#__PURE__*/React.createElement(_InfoSectionSecond.default, null));
 };
 var _default = exports.default = MainPage;

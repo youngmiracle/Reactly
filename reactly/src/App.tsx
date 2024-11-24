@@ -12,6 +12,7 @@ import { useState, useContext, createContext, useEffect } from 'react';
 import axios from 'axios';
 import { LinkContext } from './types/LinkContext'
 import ReactItemPhon from './components/shared/ReactItemPhon/ReactItemPhon';
+import Footer from './components/widgets/Footer/Footer';
 
 const App: React.FC = () => {
   
@@ -31,8 +32,8 @@ const App: React.FC = () => {
             <Route path="Contacts" element={<ContactsPage/>}/>
             <Route path="NotFoundPage" element={<NotFoundPage/>}/>
             <Route path={`Products/${nameLink}`} element={<CatalogItemPage/>}/>
-           
           </Routes>
+          <Footer/>
           <ReactItemPhon/>
       </BrowserRouter>
     </LinkContext.Provider>
