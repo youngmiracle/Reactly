@@ -22,7 +22,7 @@ var Header = function Header() {
     scrollClass = _useState2[0],
     setScrollClass = _useState2[1]; //state на скролл
 
-  //скрипт для скролла, когда скроллится до определённых px появляется background
+  //скрипт для скролла, когда скроллится до определённых px появляется background.
   window.addEventListener('scroll', function () {
     var scroll = window.scrollY;
     if (scroll >= 100) {

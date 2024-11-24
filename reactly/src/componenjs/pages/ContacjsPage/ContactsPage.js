@@ -29,7 +29,7 @@ var ContactsPage = function ContactsPage() {
     className: "asideArticle__aside"
   }, /*#__PURE__*/React.createElement("h3", {
     className: "aside_title"
-  }, "\u042E\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0430\u0434\u0440\u0435\u0441:"), /*#__PURE__*/React.createElement("p", null, "\u0420\u043E\u0441\u0441\u0438\u044F, 654776, \u0433.\u0427\u0438\u0442\u0430, \u043C\u043A-\u0440 \u042E\u0436\u043D\u044B\u0439, \u0434\u043E\u043C 13, \u043E\u0444\u0438\u0441 40.")), /*#__PURE__*/React.createElement("aside", {
+  }, "\u042E\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0430\u0434\u0440\u0435\u0441: "), /*#__PURE__*/React.createElement("p", null, "\u0420\u043E\u0441\u0441\u0438\u044F, 654776, \u0433.\u0427\u0438\u0442\u0430, \u043C\u043A-\u0440 \u042E\u0436\u043D\u044B\u0439, \u0434\u043E\u043C 13, \u043E\u0444\u0438\u0441 40.")), /*#__PURE__*/React.createElement("aside", {
     className: "asideArticle__aside"
   }, /*#__PURE__*/React.createElement("h3", {
     className: "aside_title"
