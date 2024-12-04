@@ -68,6 +68,13 @@ const Type = sequelize.define('type', {
     tableName:'type'
 })
 
+const Contact = sequelize.define('contact', {
+    id_contact:{type:DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
+    name: {type: DataTypes.STRING},
+    number: {type: DataTypes.INTEGER},
+    email: {type: DataTypes.STRING}
+})
+
 User.hasOne(Basket);
 Basket.belongsTo(User);
 
@@ -93,5 +100,6 @@ module.exports = {
     Product,
     ProductInfo,
     ProductSize,
-    Type
+    Type,
+    Contact
 }
