@@ -21,12 +21,12 @@
 }
 @keyframes buttonDefaultHover{
     100%{
-        box-shadow: 1px 1px 15px 1px white;
+        box-shadow: 1px 1px 5px 1px white;
     }
 }
 @keyframes buttonDefaultHoverBack{
     from{
-        box-shadow: 1px 1px 15px 1px white;
+        box-shadow: 1px 1px 5px 1px white;
     }
     100%{
         box-shadow: 1px 1px 3px 1px#900dc48d;;

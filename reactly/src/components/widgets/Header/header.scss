@@ -5,7 +5,8 @@ header{
     padding: 2vh 15%;
     height: 9vh;
     overflow: hidden;
-    box-shadow: 0.5px 0.5px 10px 0.5px white;
+    box-shadow: .5px .5px 10px 0.5px white;
+    
     .header__nav{
         width: 100%;
         height: 100%;
@@ -17,19 +18,6 @@ header{
             width: 10%;
             height: 130%;
         }
-        .header__link{
-            letter-spacing: 1px;
-            font-size: 2vh;
-            color: #dbcbc3;
-            font-weight: 300;
-        }
-        .header__link:hover{
-            font-weight: 400;
-        }
-        .header__linkActive{
-            border-bottom: 1px solid hsla(283, 88%, 41%, 0.6);
-            font-weight: 400;
-        }
     }
 }
 .headerScroll{
@@ -40,12 +28,15 @@ header{
 }
 @keyframes scrollHeader {
     100%{
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: #9400d36b;
+        backdrop-filter: blur(10px);
     }
 }
+
 @keyframes scrollHeaderBack {
     from{
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: #9400d36b;
+        backdrop-filter: blur(10px);
     }
     100%{
         background-color: transparent;

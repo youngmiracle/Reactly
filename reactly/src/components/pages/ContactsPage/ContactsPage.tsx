@@ -11,7 +11,7 @@ const ContactsPage = () => {
                 <ContactsInformationSection img={photos.phoneLogo} title="Телефон:" data="8 (914) 522-18-63 (Круглосуточно, без выходных)"/>
                 <ContactsInformationSection img={photos.mailLogo} colorData='#9400D3' title="Email:" data="leventasE@reactly.com"/> 
                 <aside className='asideArticle__aside'>
-                    <h3 className='aside_title'>Юридический адрес:</h3>
+                    <h3 className='aside_title'>Юридический адрес: </h3>
                     <p>Россия, 654776, г.Чита, мк-р Южный, дом 13, офис 40.</p>
                 </aside>
                 <aside className='asideArticle__aside'>
@@ -20,6 +20,7 @@ const ContactsPage = () => {
                 </aside>
             </article>
             <article className='contactsMain__menuArticle'>
+                <h3 className='menuArticle__title'>Заполните форму если хотите чтобы с вами связался специалист:</h3>
                 <form className='menuArticle__form'>
                     <input type="text" className='menuArticle__input' placeholder='ФИО*'/>
                     <input type="tel" className='menuArticle__input' placeholder='Ваш телефон*'/>

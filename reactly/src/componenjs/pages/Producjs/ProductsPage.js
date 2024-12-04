@@ -6,11 +6,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 require("./productsPage.css");
 var _ProductAssortments = require("../../../types/ProductAssortments");
-var _reactRouterDom = require("react-router-dom");
 var _AssortmentCard = _interopRequireDefault(require("../../widgets/AssortmentCard/AssortmentCard"));
 var _LinkContext = require("../../../types/LinkContext");
-var _photo = _interopRequireDefault(require("../../../types/photo"));
-var _ReactItemPhon = _interopRequireDefault(require("../../shared/ReactItemPhon/ReactItemPhon"));
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 var ProductsPage = function ProductsPage() {
   //обращаясь к глобальному контексту, меняю стиль кнопке Products

@@ -4,6 +4,7 @@ import Images from '../../../types/photo';
 import { useState, useContext } from 'react';
 import { useLinkContext } from '../../../types/LinkContext';
 import { LinkContextType } from '../../../types/LinkContext';
+import ButtonNavigate from '../../shared/Button/ButtonNavigate/ButtonNavigate';
 
 const Header = () => {
     const [scrollClass, setScrollClass] = useState <string>(""); //state на скролл
@@ -20,27 +21,16 @@ const Header = () => {
     ); 
     
     const nameLinki = useLinkContext(); //Получаем глобальное состояние, в котором хранится класс для кнопки
-    const { setNameLink }: any = useLinkContext()
-    
-    
-    //Функция, которая принимает название страницы, обновляет ключ в ssesionStorage и меняет глобальное состояние
-    const onClickClassChangeLink = function (nameLink: LinkContextType){
-        sessionStorage.setItem("linkActiveClass", nameLink);
-        setNameLink(nameLink);
-    };
-
-    const LinkClass: string = "header__link";
-    const LinkActiveClass: string = "header__link header__linkActive";
-    
+   
     return(
     <>
         <header className={scrollClass}>
             <nav className='header__nav'>
-                <Link className={nameLinki.nameLink == "Home" ? LinkActiveClass : LinkClass} to="/" onClick={() => onClickClassChangeLink("Home")}>Главная</Link>
-                <Link className={nameLinki.nameLink == 'OilSearch' ? LinkActiveClass : LinkClass} to="/OilSearch" onClick={() => onClickClassChangeLink("OilSearch")}>Подбор масла</Link>
+                <ButtonNavigate btnType='Link' className={nameLinki.nameLink == "Home" ? "header__link header__linkActive" : "header__link"} to="/" nameLink="Home">Главная</ButtonNavigate>
+                <ButtonNavigate btnType='Link' className={nameLinki.nameLink == 'OilSearch' ? "header__link header__linkActive" : "header__link"} to="/OilSearch" nameLink="OilSearch">Подбор масла</ButtonNavigate>
                 <img src={Images.logoImg} alt="Logo" className='header__logo'/>
-                <Link className={nameLinki.nameLink == 'Products' ? LinkActiveClass : LinkClass} onClick={() => onClickClassChangeLink("Products")} to="/Products">Продукция</Link>
-                <Link className={nameLinki.nameLink == "Contacts" ? LinkActiveClass : LinkClass} onClick={() => onClickClassChangeLink("Contacts")} to="/Contacts">Контакты</Link>
+                <ButtonNavigate btnType='Link' className={nameLinki.nameLink == 'Products' ? "header__link header__linkActive" : "header__link"} nameLink="Products" to="/Products">Продукция</ButtonNavigate>
+                <ButtonNavigate btnType='Link' className={nameLinki.nameLink == "Contacts" ? "header__link header__linkActive" : "header__link"} nameLink="Contacts" to="/Contacts">Контакты</ButtonNavigate>
             </nav> 
         </header>
         <Outlet/>

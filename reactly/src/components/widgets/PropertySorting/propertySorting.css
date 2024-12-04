@@ -1,0 +1,148 @@
+.propertySortingForm {
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  letter-spacing: 2px;
+  line-height: 2.2vh;
+  font-size: 1.5vh;
+}
+.propertySortingForm .propertySortingForm__title {
+  font-size: 2.5vh;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 3vh;
+}
+.propertySortingForm .propertySortingForm__sortBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+.propertySortingForm .propertySortingForm__sortBlock .sortBlock__select {
+  font-size: 1.8vh;
+  margin-bottom: 0.5vh;
+}
+.propertySortingForm .propertySortingForm__sortBlock .sortBlock__valueBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4vh;
+}
+.propertySortingForm .propertySortingForm__sortBlock .sortBlock__valueBlock .valueBlock__input {
+  width: 45%;
+  height: 100%;
+  padding-left: 2%;
+  border: 1.5px solid rgb(190, 190, 190);
+  border-radius: 5px;
+  background-color: transparent;
+  color: #9400D3;
+}
+.propertySortingForm .propertySortingForm__sortBlock .sortBlock__titleBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 3vh;
+  position: relative;
+  margin-bottom: 1vh;
+}
+.propertySortingForm .propertySortingForm__sortBlock .sortBlock__titleBlock .sortBlock__arrow {
+  font-size: 2.5vh;
+  display: inline-block;
+  -webkit-animation: arrow 1s alternate forwards;
+          animation: arrow 1s alternate forwards;
+}
+.propertySortingForm .propertySortingForm__sortBlock .sortBlock__titleBlock .sortBlock__arrowReverse {
+  -webkit-animation: arrowReverse 1s alternate forwards;
+          animation: arrowReverse 1s alternate forwards;
+}
+.propertySortingForm .propertySortingForm__sortBlock .sortBlock__titleBlock .sortBlock__btn {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+.propertySortingForm .propertySortingForm__btnBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 4vh;
+}
+
+@-webkit-keyframes arrowReverse {
+  100% {
+    color: #ab00f4;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes arrowReverse {
+  100% {
+    color: #ab00f4;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes arrow {
+  from {
+    color: #ab00f4;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    color: #9400D3;
+  }
+}
+@keyframes arrow {
+  from {
+    color: #ab00f4;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    color: #9400D3;
+  }
+}

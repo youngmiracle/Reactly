@@ -1,0 +1,16 @@
+.buttonCatalog{
+    width: 45%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid #9400D3;
+    border-radius: 5px;
+    color: #cecece;
+}
+.buttonCatalog:hover{
+    animation: buttonCatalogHover .7s alternate forwards;
+}
+@keyframes buttonCatalogHover {
+    100%{
+        background-color: #9400D3;
+    }
+}

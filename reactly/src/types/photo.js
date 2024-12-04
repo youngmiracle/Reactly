@@ -13,7 +13,8 @@ var Images = {
   InfoImagesFirst: require('../components/assets/images/MainPage/infoImagesFirst.png'),
   promotionOne: require('../components/assets/images/MainPage/promotionOne.png'),
   InfoImagesSecond: require('../components/assets/images/MainPage/infoImagesSecond.png'),
-  mailLogo: require('../components/assets/images/Contacts/mailLogo.png'),
-  phoneLogo: require('../components/assets/images/Contacts/phoneLogo.png')
+  mailLogo: require('../components/assets/images/icons/mailLogo.png'),
+  phoneLogo: require('../components/assets/images/icons/phoneLogo.png'),
+  arrowBtn: require('../components/assets/images/supportBtn/arrow.png')
 };
 var _default = exports.default = Images;

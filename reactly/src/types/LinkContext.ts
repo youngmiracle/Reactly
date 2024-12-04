@@ -1,6 +1,6 @@
 import { useContext, createContext } from 'react';
 
-export type LinkContextType = "Home" | "OilSearch" | "Products" | "Contacts" | "Products/MotorOil" | "Products/TransmissionOil" | "Products/CommercialOil" | "Products/Antifreeze" ;
+export type LinkContextType = "Home" | "OilSearch" | "Products" | "Contacts" | "Products/MotorOil" | "Products/TransmissionOil" | "Products/CommercialOil" | "Products/Antifreeze" | "nameLink";
 //Объединение (Unions) - для глобального контекста "Link", в файлах Header.tsx, MainPage.tsx и т.д.
 
 export interface LinkContextInterface{

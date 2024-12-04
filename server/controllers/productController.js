@@ -33,7 +33,7 @@ class ProductController{
             products = await Product.findAndCountAll({where:{id_type},limit, offset, include:[{model: ProductInfo, as:'product_infos'}, {model: ProductSize, as: 'product_sizes'}]});
         }
         return res.json(products);
-    }
+    } 
     async getOne(req, res, next){
         let id_product = req.params;
         id_product = JSON.parse(id_product.id)
